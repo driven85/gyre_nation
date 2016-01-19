@@ -1,0 +1,33 @@
+- provide :title, 'О компании &bull; GyreNation'
+
+= render 'image'
+
+div class="page"
+
+  div class="text"
+    div class="left"
+      p align="justify" В 1992 году была основана компания «S-Mail», которая зарекомендовала себя на рынке, продавая электронную почту с защитой почтовой базы шифрованием
+        от третьих лиц под единым названием с компанией
+      p align="justify" В 2014 году компания расширила спектр своей деятельности и провела ребрендинг, в том числе сменив название компании на GYRENATION.
+    div class="right"
+      p align="justify" Основным направлением деятельности компании являются современные информационные технологии.
+      p align="justify"
+        | Принципы работы: 
+        ul
+          li Легкость в использовании
+          li Максимально автоматизированный функционал
+          li Использование в разработке только последние достижения информационных технологий
+
+    div class="table"
+      table
+        tr
+          td class="left-td" = image_tag "easy.png", alt: "Легкость"
+          td class="center-td" = image_tag "it.png", alt: "Исследование"
+          td class="right-td" = image_tag "automatically.png", alt: "Функционал"
+        tr
+          td class="left-td" Легкость в использовании
+          td class="center-td" Использование в разработке только последних достижений в области IT
+          td class="right-td" Максимально автоматизированный функционал
+
+    div class="video"
+      iframe src="https://player.vimeo.com/video/132209813" width="100%" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen

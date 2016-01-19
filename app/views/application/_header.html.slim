@@ -1,0 +1,22 @@
+div class="page"
+  div class="lang"
+    table
+      tr
+        td 
+          span RU
+        td 
+          a href="" = image_tag "rus.gif", alt: "Russian"
+        td 
+          span EN
+        td 
+          a href="" = image_tag "us.gif", alt: "English"
+                                                                                                                         
+  div class="logo" style="clear: right"
+    = image_tag "logo_big.png", alt: "Лого"
+
+  div class="nav"
+    ul
+      = nav_elem( "О компании", company_path, @current_nav == :company )
+      = nav_elem( "Проекты", projects_path, @current_nav == :projects )
+      = nav_elem( "Медиа", media_path, @current_nav == :media )
+      = nav_elem( "Контакты", contact_path, @current_nav == :contact )

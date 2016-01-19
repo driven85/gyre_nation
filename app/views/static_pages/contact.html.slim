@@ -1,2 +1,34 @@
-h1 StaticPages#contact
-p Find me in app/views/static_pages/contact.html.slim
+- provide :title, 'Media'
+
+= render 'image'
+
+div class="page"
+  div class="map"
+    script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=f06olXaki1mRaYXUHPhGr7C_Ll3YwhrU&width=100%&height=450"
+
+  div class="contact"
+    h3 Обратная связь
+    form
+      table class="form-contact"
+        tr
+          td 
+            label Ваше имя
+          td 
+            label Email
+        tr
+          td 
+            input name="name" placeholder="Ваше имя"
+          td 
+            input name="email" type="email" placeholder="Ваш email"
+        tr
+          td colspan="2" Сообщение
+        tr
+          td colspan="2"
+            textarea name="message" placeholder="Введите Ваше сообщение"
+
+      input id="submit" name="submit" type="submit" value="Отправить"
+
+  div style="clear:both;"
+
+
+ 

@@ -1,2 +1,45 @@
-h1 StaticPages#media
-p Find me in app/views/static_pages/media.html.slim
+- provide :title, 'Media'
+
+= render 'image'
+
+div class="page"
+
+  div class="media"
+    div class="one-media"
+      span class="date" 01.05.2015
+      a href="#" onclick="diplay_hide('#media-1');return false;" &nbsp;- Рекламный ролик №1
+      div id="media-1" style="display: none;"
+        div class="image"
+          = image_tag "video1.jpg", alt: "photo"
+        p class="opisanie" Описание
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, quidem? Ullam ipsa eius ad facere, aut alias. Quidem animi harum, recusandae illo enim cumque, earum, 
+          quod modi deserunt amet fugit!
+
+  div class="media"
+    div class="one-media"
+      span class="date" 02.06.2015
+      a href="#" onclick="diplay_hide('#media-2');return false;" &nbsp;- Рекламный ролик №2
+      div id="media-2" style="display: none;"
+        div class="image"
+          = image_tag "video2.jpg", alt: "photo"
+        p class="opisanie" Описание
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui obcaecati facilis odit dolor tempora, magnam veritatis repellendus veniam numquam deserunt provident, 
+          totam laborum perferendis quaerat nesciunt reprehenderit, officia fugiat maiores.
+        p Impedit aspernatur dolorum temporibus ipsa eveniet molestiae illum nostrum earum aliquam, ea itaque consectetur porro accusamus praesentium ducimus veniam at soluta repudiandae, 
+          et reprehenderit expedita. Cupiditate quaerat dolorem eligendi ipsam.
+
+  div class="media"
+    div class="one-media"
+      span class="date" 13.07.2015
+      a href="#" onclick="diplay_hide('#media-3');return false;" &nbsp;- Рекламный ролик №3
+      div id="media-3" style="display: none;"
+        div class="image"
+          = image_tag "video1.jpg", alt: "photo"
+        p class="opisanie" Описание
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque exercitationem, iure doloribus iste hic suscipit voluptates veniam odit debitis quidem consectetur optio non, 
+          aspernatur neque culpa, provident laboriosam eligendi molestiae.
+        p Quae eum provident voluptate architecto ipsa id exercitationem eos quia, saepe expedita doloremque, dolor, voluptates perferendis. Labore placeat praesentium facilis, 
+          doloribus excepturi suscipit laborum, assumenda quae provident voluptatem, sed odit.
+        p Tenetur consequuntur ea maxime minima maiores eveniet reprehenderit possimus atque numquam, explicabo voluptate error dolore labore aliquam ducimus vero amet nam, assumenda omnis, 
+          laudantium animi unde! Quasi odit cumque eos.
+

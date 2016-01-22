@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
 
+  resources :sessions, only: [ :new, :create, :destroy ]
+
+  resources :users, only: [ :show, :new, :create ]
+
+  get '/signin' => 'sessions#new'
+
+  delete '/signout' => 'sessions#destroy'
+
+  get 'signup' => 'users#new'
+
   get '/company' => 'static_pages#company'
 
   get '/projects' => 'static_pages#projects'
@@ -13,6 +23,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
+  
   root 'static_pages#company'
 
   # Example of regular route:
@@ -63,4 +74,6 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  get '*path' => redirect( '/' )
 end

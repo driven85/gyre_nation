@@ -10,6 +10,15 @@ div class="page"
           span EN
         td 
           a href="" = image_tag "us.gif", alt: "English"
+        td 
+          - if signed_in?
+            | &nbsp;
+            = link_to current_user.name, current_user
+            | &nbsp;
+            = link_to "Выйти", signout_path, method: :delete
+          - else
+            | &nbsp;
+            = link_to "Войти", signin_path
                                                                                                                          
   div class="logo" style="clear: right"
     = image_tag "logo_big.png", alt: "Лого"

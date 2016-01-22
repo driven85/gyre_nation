@@ -1,0 +1,27 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div#signup, div#signin {
+  margin-top: 60px;
+  margin-bottom: 150px;
+  form {
+    div, div > div.field_with_errors {
+      width: 30%;
+      margin: 10px;
+      input {
+        width: 80%;
+        padding: 2px 7px 2px 7px;
+      }
+    }
+    input[type=submit] {
+      width: 45%;
+      cursor: pointer;
+    }
+  }
+}
+
+div#user_page {
+  height: 330px;
+  padding-top: 100px; 
+}

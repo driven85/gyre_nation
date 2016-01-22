@@ -1,0 +1,23 @@
+= provide :title, 'Войти'
+
+div id="signin" align="center"
+
+  div#signin_error
+    = @error
+
+  = form_for( :session, url: sessions_path ) do |f|
+
+    div 
+      = f.text_field :email, placeholder: "Ваш email"
+
+    div
+      = f.password_field :password, placeholder: "Ваш пароль"
+
+    div
+      = f.submit "Войти"
+
+  p 
+    | Новый пользователь? 
+    = link_to "Зарегистрироваться", signup_path
+
+

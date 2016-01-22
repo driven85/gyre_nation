@@ -1,0 +1,22 @@
+- provide :title, 'Регистрация GyreNation'
+
+div id="signup" align="center"
+
+  = form_for( @user ) do |f|
+
+    div 
+      = f.text_field :name, placeholder: "Ваше имя"
+
+    div
+      = f.text_field :email, placeholder: "Ваш email"
+
+    div
+      = f.password_field :password, placeholder: "Ваш пароль"
+
+    div
+      = f.password_field :password_confirmation, placeholder: "Подтвердите пароль:"
+
+    div
+      = f.submit "Зарегистрироваться"
+
+
